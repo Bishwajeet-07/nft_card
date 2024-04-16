@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+}
+
+.image {
+    /* border: 2px solid green; */
+    width: 14rem;
+    height: 14rem;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.image img {
+    display: block;
+    width: 100%;
+
+}
+
+.hover-effect {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    inset: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+
+.hover-effect:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+main {
+    display: flex;
+    height: 95vh;
+    color: white;
+    font-family: "outfit", sans-serif;
+
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 260px;
+    background-color: hsl(216, 50%, 16%);
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.card-value h2 {
+    font-size: 18px;
+    margin-block: 1rem;
+    font-weight: 600;
+}
+
+.card-value h2:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.card-value p {
+    font-size: 14px;
+    font-weight: 400;
+    color: hsl(215, 51%, 70%);
+}
+
+.time-value {
+    margin-block: 1rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid hsla(215, 52%, 70%, 0.393);
+    padding-bottom: 1.5rem;
+}
+
+.time-value p i{
+    margin-right: 8px;
+}
+
+.time-value .first-time-value {
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+}
+
+.buttom-phase {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.buttom-phase p {
+    font-size: 12px;
+}
+
+.buttom-phase img {
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 30px;
+    margin-right: 10px;
+}
+
+.name-data {
+    color: white;
+
+}
+
+.name-data:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+
+}
